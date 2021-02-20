@@ -19,40 +19,53 @@
 <body>
 
   <section class="contact">
-    <div class="contact__box">
-      <h2 class="contact__heading">Learn to code by watching others</h2>
+
+    <div class="contact__box contact__box--first">
+      <h1 class="contact__heading">Learn to code by <br> watching others</h1>
       <p class="contact__paragraph">See how experienced developers solve problems in real-time. Watching scripted
         tutorials is great,
         but understanding how developers think is invaluable.</p>
     </div>
 
-    <a href="" class="contact__btn contact__btn--first">Try it free 7 days then $20/mo. thereafter</a>
+    <div class="contact__box contact__box--second">
 
-    <form action="" class="contact__form">
+      <p class="contact__box-paragraph"> <span>Try it free 7 days </span>then $20/mo. thereafter</p>
 
-      <div class="contact__form-box">
-        <label for="name">First Name</label>
-        <input type="text" id="name" class="contact__form-box--input">
-      </div>
-      <div class="contact__form-box">
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" class="contact__form-box--input">
-      </div>
-      <div class="contact__form-box">
-        <label for="mail">Email Address</label>
-        <input type="email" id="mail" class="contact__form-box--input">
-      </div>
-      <div class="contact__form-box">
-        <label for="password">Password</label>
-        <input type="password" id="password" class="contact__form-box--input">
-      </div>
+      <form action="" class="contact__form">
 
-      <button class="contact__form-btn" type="submit">Claim your free trial</button>
+        <div class="contact__form-box">
+          <label for="name">First Name</label>
+          <input type="text" id="name" class="contact__form-box--input" placeholder="First Name">
+          <img src="./images/icon-error.svg" class="contact__form-icon-error" alt="error-icon">
+          <p class="contact__form-text-error">First Name cannot be empty</p>
+        </div>
+        <div class="contact__form-box">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" class="contact__form-box--input" placeholder="Last Name">
+          <img src="./images/icon-error.svg" class="contact__form-icon-error" alt="error-icon">
+          <p class="contact__form-text-error">Last Name cannot be empty</p>
+        </div>
+        <div class="contact__form-box">
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" class="contact__form-box--input" placeholder="Email Address">
+          <img src="./images/icon-error.svg" class="contact__form-icon-error" alt="error-icon">
+          <p class="contact__form-text-error">Looks like is not an email</p>
+        </div>
+        <div class="contact__form-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="contact__form-box--input" placeholder="Password">
+          <img src="./images/icon-error.svg" class="contact__form-icon-error" alt="error-icon">
+          <p class="contact__form-text-error">Password cannot be empty</p>
+        </div>
 
-      <p class="contact__form-agreement">By clicking the button, you are agreeing to our <a href="#"
-          class="contact__form-agreement--link">Terms and
-          Services</a></p>
-    </form>
+        <button class="contact__form-btn" type="submit">Claim your free trial</button>
+
+        <p class="contact__form-agreement">By clicking the button, you are agreeing to our <a href="#"
+            class="contact__form-agreement--link">Terms and
+            Services</a></p>
+      </form>
+    </div>
+
   </section>
 
 

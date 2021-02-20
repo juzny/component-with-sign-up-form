@@ -17,4 +17,63 @@ body {
   background: #222831;
   color: #eeeeee;
 }
+
+label,
+.contact__form-icon-error,
+.contact__form-text-error {
+  display: none;
+}
+
+.contact {
+  padding: 9rem 3.5rem;
+}
+
+.contact__box--first {
+  text-align: center;
+}
+
+.contact__paragraph {
+  margin: 2.5em 0 6em 0;
+}
+
+.contact__box-paragraph {
+  padding: 2.5rem 7rem;
+  border-radius: 1.2rem;
+  background: #0092ca;
+  text-align: center;
+  -webkit-box-shadow: 0.8rem 0.8rem rgba(0, 146, 202, 0.1);
+          box-shadow: 0.8rem 0.8rem rgba(0, 146, 202, 0.1);
+  margin-bottom: 2.5rem;
+}
+
+.contact__box-paragraph span {
+  font-weight: bold;
+}
+
+.contact__form {
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0.8rem 0.8rem rgba(57, 62, 70, 0.2);
+          box-shadow: 0.8rem 0.8rem rgba(57, 62, 70, 0.2);
+  background: #393e46;
+}
+
+.contact__form-box--input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.contact__form-btn {
+  width: 100%;
+  padding: 2rem 4rem;
+  background: #45bf55;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
