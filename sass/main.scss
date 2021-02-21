@@ -45,6 +45,11 @@ label,
     text-align: center;
     box-shadow: 0.8rem 0.8rem rgba($color: $primary, $alpha: 0.1);
     margin-bottom: 2.5rem;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
 
     span {
       font-weight: bold;
@@ -64,6 +69,14 @@ label,
         border-radius: 0.5rem;
         margin-bottom: 1.5rem;
         font-weight: 700;
+        background: $bgbody;
+        color: $white;
+        border: 0.2rem solid $inputcolor;
+
+        &:focus {
+          outline: none;
+          border: 0.2rem solid $primary;
+        }
       }
     }
     &-btn {
@@ -75,14 +88,60 @@ label,
       cursor: pointer;
       color: $white;
       text-transform: uppercase;
+      border: none;
+      margin-bottom: 1rem;
+    }
+
+    &-agreement {
+      font-size: 0.8rem;
+      text-align: center;
+
+      &--link {
+        font-weight: bold;
+        color: $agreement;
+        text-decoration: none;
+      }
     }
   }
 }
-// .attribution {
-//   font-size: 11px;
-//   text-align: center;
-// }
 
-// .attribution a {
-//   color: hsl(228, 45%, 44%);
-// }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  .contact {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0 8rem;
+    // width: 100%;
+
+    // flex-wrap: wrap;
+
+    &__box {
+      flex: 1;
+      padding: 0 3rem;
+
+      &--first {
+        text-align: left;
+      }
+    }
+
+    &__heading {
+      font-size: 4rem;
+    }
+
+    &__box-paragraph {
+      padding: 2rem 5rem;
+    }
+  }
+}
