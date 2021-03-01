@@ -15,13 +15,13 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  background: $bgbody;
+  background-color: $bgbody;
+  // background-image: url("/images/bg-intro-mobile.png");
+  // filter: grayscale(100%);
   color: $white;
 }
 
-label,
-.contact__form-icon-error,
-.contact__form-text-error {
+label {
   display: none;
 }
 
@@ -63,6 +63,8 @@ label,
     background: $bgform;
 
     &-box {
+      position: relative;
+      padding: 1rem 0;
       &--input {
         width: 100%;
         padding: 2rem;
@@ -79,6 +81,29 @@ label,
         }
       }
     }
+
+    &-icon-error {
+      position: absolute;
+      top: 2.6rem;
+      right: 1rem;
+      color: $error;
+      display: none;
+    }
+    &-text-error {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 1rem;
+      text-align: right;
+      color: $error;
+      display: none;
+    }
+
+    &-box.error &-icon-error,//show and hide form error icon
+    &-box.error &-text-error {
+      display: block;
+    }
+
     &-btn {
       width: 100%;
       padding: 2rem 4rem;
@@ -89,7 +114,7 @@ label,
       color: $white;
       text-transform: uppercase;
       border: none;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
     }
 
     &-agreement {
@@ -114,7 +139,7 @@ label,
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .contact {
     max-width: 1400px;
     min-height: 100vh;

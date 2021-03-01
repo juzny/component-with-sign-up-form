@@ -14,13 +14,11 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  background: #222831;
+  background-color: #222831;
   color: #eeeeee;
 }
 
-label,
-.contact__form-icon-error,
-.contact__form-text-error {
+label {
   display: none;
 }
 
@@ -67,6 +65,11 @@ label,
   background: #393e46;
 }
 
+.contact__form-box {
+  position: relative;
+  padding: 1rem 0;
+}
+
 .contact__form-box--input {
   width: 100%;
   padding: 2rem;
@@ -83,6 +86,29 @@ label,
   border: 0.2rem solid #0092ca;
 }
 
+.contact__form-icon-error {
+  position: absolute;
+  top: 2.6rem;
+  right: 1rem;
+  color: #f85134;
+  display: none;
+}
+
+.contact__form-text-error {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1rem;
+  text-align: right;
+  color: #f85134;
+  display: none;
+}
+
+.contact__form-box.error .contact__form-icon-error,
+.contact__form-box.error .contact__form-text-error {
+  display: block;
+}
+
 .contact__form-btn {
   width: 100%;
   padding: 2rem 4rem;
@@ -93,7 +119,7 @@ label,
   color: #eeeeee;
   text-transform: uppercase;
   border: none;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .contact__form-agreement {
@@ -116,7 +142,7 @@ label,
   color: #3e52a3;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .contact {
     max-width: 1400px;
     min-height: 100vh;
